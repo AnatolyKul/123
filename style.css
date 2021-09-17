@@ -1,0 +1,62 @@
+body
+{
+    margin: 0;
+    height: 100vh;
+}
+.window
+{
+    color:white;
+    background-color: darkblue;
+    width: 300px;
+    max-height: 300px;
+}
+.window > .head
+{
+    position: relative;
+    background-color:black;
+    color:white;
+    padding: 5px 0;
+}
+.window > .head > .close
+{
+ 
+ display: block;
+ width: 16px;
+ height: 16px;
+ margin-left: auto;
+ position: absolute;
+ right: 5px;
+ top: 50%;
+ transform: translateY(-50%);
+background-color: red;
+}
+
+.window > .head > .close:before, 
+.window > .head > .close:after
+{
+ 
+    content: " ";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color:white;
+    left: 50%;
+    border-radius: 3px;
+    transform: translateX(-50%) rotate(45deg);
+}
+.window > .head > .close:after
+{
+    transform: translateX(-50%) rotate(135deg);
+}
+.window > .head > .close:hover::after{
+    background-color:greenyellow;
+}
+.window > .head > .close:hover::before{
+    background-color: aqua;
+}
+
+
+
+
+
+
